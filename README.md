@@ -39,7 +39,7 @@ WAR Deployment to Liberty
 After downloading the WAR files, copy them to your Liberty server’s `dropins` directory:
 
 ```bash
-cp *.war /opt/ibm/wlp/usr/servers/defaultServer/dropins/
+cp *.war /opt/ibm/wlp/usr/servers/<serverName>/dropins/
 ```
 
 ### 🌐 Context Roots:
@@ -87,10 +87,7 @@ You will see memory usage increasing with each call to `/leak`.
 It is intentionally designed to simulate a memory leak and will eventually cause the server to crash if used repeatedly.
 
 ---
-Süper!  
-Şimdi tüm verdiğin bilgileri toparlayarak, `README.md`'ye ekleyebileceğin şekilde **profesyonel ve eksiksiz** bir bölüm daha hazırladım:  
 
----
 ---
 
 ## 🧠 Memory Leak Demonstration
@@ -121,7 +118,7 @@ You can quickly fill up the memory and simulate a server crash by making multipl
 **Using Apache Benchmark (ab):**
 
 ```bash
-ab -n 5000 -c 100 http://9.46.234.107:9080/memoryleak/leak
+ab -n 5000 -c 100 http:<IP_or_Hostname>:9080/memoryleak/leak
 ```
 - `-n 5000` → Total 5000 requests
 - `-c 100` → 100 concurrent requests
@@ -129,7 +126,7 @@ ab -n 5000 -c 100 http://9.46.234.107:9080/memoryleak/leak
 **Using a Bash for loop:**
 
 ```bash
-for i in {1..1000}; do curl -s http://9.46.234.107:9080/memoryleak/leak; done
+for i in {1..1000}; do curl -s http://<IP_or_Hostname>:9080/memoryleak/leak; done
 ```
 - Sends 1000 sequential requests to `/leak`.
 - Heap usage will grow with each request.
