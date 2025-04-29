@@ -1,4 +1,10 @@
+<div align="center">
+  <p><strong>Designed & Documented by Mertugral</strong></p>
+  <p>© 2025 Mertugral. All rights reserved.</p>
+  <p><a href="https://github.com/ertugralmert">GitHub</a> | <a href="https://linkedin.com/in/mertertugral">LinkedIn</a></p>
+</div>  
 
+---
 # Liberty WAR Files & Installer
 
 This repository contains WAR files and a shell script for installing IBM WebSphere Liberty. All files are available via GitHub Releases and can be downloaded individually either via browser or command-line.
@@ -136,4 +142,8 @@ for i in {1..1000}; do curl -s http://9.46.234.107:9080/memoryleak/leak; done
 ---
 
 
-
+<div align="center">
+  <p><strong>Designed & Documented by Mertugral</strong></p>
+  <p>© 2025 Mertugral. All rights reserved.</p>
+  <p><a href="https://github.com/ertugralmert">GitHub</a> | <a href="https://linkedin.com/in/mertertugral">LinkedIn</a></p>
+</div>
